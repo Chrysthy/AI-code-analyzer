@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, #292a30 0%, #41275b 100%);
     min-height: 100vh;
     padding: 20px;
