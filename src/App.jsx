@@ -10,7 +10,7 @@ function App() {
 
         <h1 className="title">AI Code Analyzer</h1>
 
-        <p>Paste your code and find ways to improve it.</p>
+        <h3 className='subtitle'>Paste your code and find ways to improve it.</h3>
 
         <div className="input-group">
 
