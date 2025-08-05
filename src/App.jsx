@@ -14,7 +14,7 @@ function App() {
 
         <div className="input-group">
 
-          <textarea className='code-textarea' placeholder='Paste tou code here... (JS, HTML, CSS, etc.)'></textarea>
+          <textarea className='code-textarea' placeholder='Paste your code here... (JS, HTML, CSS, etc.)'></textarea>
 
         </div>
 
@@ -26,7 +26,7 @@ function App() {
 
         <div className="result-container">
 
-          <h2 className="result-tile">Code Analysis</h2>
+          <h2 className="result-title">Code Analysis</h2>
 
           <div className="result-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aspernatur inventore dolores est. Amet nesciunt expedita
             ut accusantium maxime quisquam temporibus nisi, eaque commodi dolore minima, odio quaerat non inventore.</div>
