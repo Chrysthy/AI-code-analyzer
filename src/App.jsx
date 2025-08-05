@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+    <main>
+
+      <div className="container">
+
+        <h1 className="title">AI Code Analyzer</h1>
+
+        <p>Paste your code and find ways to improve it.</p>
+
+        <div className="input-group">
+
+          <textarea className='code-textarea' placeholder='Paste tou code here... (JS, HTML, CSS, etc.)'></textarea>
+
+        </div>
+
+        <button className='analyze-button'>Analyze code</button>
+
+        <div className="error-message">
+          Error
+        </div>
+
+        <div className="result-container">
+
+          <h2 className="result-tile">Code Analysis</h2>
+
+          <div className="result-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aspernatur inventore dolores est. Amet nesciunt expedita
+            ut accusantium maxime quisquam temporibus nisi, eaque commodi dolore minima, odio quaerat non inventore.</div>
+
+        </div>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </main>
+
   )
 }
 
