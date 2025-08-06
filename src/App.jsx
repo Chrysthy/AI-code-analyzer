@@ -8,14 +8,27 @@ function App() {
 
   const [loading, setLoading] = useState(false);
 
+  const [result, setResult] = useState('');
+
+  const [error, setError] = useState('');
+
   const handleAnalyze = async () => {
 
     if (!code.trim()) return;
 
-    const analysis = await analyzeCode(code);
-    console.log(analysis);
+    setLoading(true);
 
-  }
+    try {
+      const analysis = await analyzeCode(code);
+      setResult(analysis);
+
+    } catch (error) {
+      setError(error.message)
+
+    } finally {
+      setLoading(false);
+    }
+  };
 
 
   return (
@@ -42,24 +55,33 @@ function App() {
         <button
           className='analyze-button'
           onClick={handleAnalyze}
-          disabled={!code.trim() || loading}>Analyze code</button>
+          disabled={!code.trim() || loading}>{loading ? 'Analyzing...' : 'Analyze code'}</button>
 
-        <div className="error-message">
-          Error
-        </div>
+        {error && (
+          //Se tiver erro, renderiza a mensagem de erro
 
-        <div className="result-container">
+          <div className="error-message">
+            {error}
+          </div>
 
-          <h2 className="result-title">Code Analysis</h2>
+        )}
 
-          <div className="result-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aspernatur inventore dolores est. Amet nesciunt expedita
-            ut accusantium maxime quisquam temporibus nisi, eaque commodi dolore minima, odio quaerat non inventore.</div>
+        {result && (
+          //Se tiver o resultado, renderiza o resultado
+          <div div className="result-container">
 
-        </div>
+            <h2 className="result-title">Code Analysis</h2>
+
+            <div className="result-content">
+              {result}
+            </div>
+
+          </div>
+        )}
 
       </div>
 
-    </main>
+    </main >
 
   )
 }
