@@ -8,7 +8,8 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const handleAnalyze = () => {
-
+    
+    if (!code.trim()) return;
   }
 
 
