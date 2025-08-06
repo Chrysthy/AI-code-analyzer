@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [code, setCode] = useState('');
 
   return (
 
@@ -14,7 +17,10 @@ function App() {
 
         <div className="input-group">
 
-          <textarea className='code-textarea' placeholder='Paste your code here... (JS, HTML, CSS, etc.)'></textarea>
+          <textarea 
+          className='code-textarea' 
+          placeholder='Paste your code here... (JS, HTML, CSS, etc.)' 
+          value={code} onChange={(e) => setCode(e.target.value)}></textarea>
 
         </div>
 
