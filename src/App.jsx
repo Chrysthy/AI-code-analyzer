@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { analyzeCode } from './services/gemini';
 import './App.css';
 
 function App() {
@@ -7,9 +8,13 @@ function App() {
 
   const [loading, setLoading] = useState(false);
 
-  const handleAnalyze = () => {
-    
+  const handleAnalyze = async () => {
+
     if (!code.trim()) return;
+
+    const analysis = await analyzeCode(code);
+    console.log(analysis);
+
   }
 
 
