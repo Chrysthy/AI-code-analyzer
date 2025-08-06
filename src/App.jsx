@@ -17,6 +17,8 @@ function App() {
     if (!code.trim()) return;
 
     setLoading(true);
+    setError('');
+    setResult('');
 
     try {
       const analysis = await analyzeCode(code);
