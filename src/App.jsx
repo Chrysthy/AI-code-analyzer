@@ -5,6 +5,13 @@ function App() {
 
   const [code, setCode] = useState('');
 
+  const [loading, setLoading] = useState(false);
+
+  const handleAnalyze = () => {
+
+  }
+
+
   return (
 
     <main>
@@ -17,14 +24,19 @@ function App() {
 
         <div className="input-group">
 
-          <textarea 
-          className='code-textarea' 
-          placeholder='Paste your code here... (JS, HTML, CSS, etc.)' 
-          value={code} onChange={(e) => setCode(e.target.value)}></textarea>
+          <textarea
+            className='code-textarea'
+            placeholder='Paste your code here... (JS, HTML, CSS, etc.)'
+            value={code}
+            onChange={(e) => setCode(e.target.value)}>
+          </textarea>
 
         </div>
 
-        <button className='analyze-button'>Analyze code</button>
+        <button
+          className='analyze-button'
+          onClick={handleAnalyze}
+          disabled={!code.trim() || loading}>Analyze code</button>
 
         <div className="error-message">
           Error
