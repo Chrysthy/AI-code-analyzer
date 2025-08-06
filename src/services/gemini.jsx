@@ -19,6 +19,7 @@ export async function analyzeCode(code) {
 
     IMPORTANT:
 
+    -Explain the problem and solution as if I were a beginner in programming.
     - Format your response using markdown
     - Use code formatting for code snippets
     - Use bold to highlight important points
@@ -39,15 +40,15 @@ export async function analyzeCode(code) {
     `;
 
     try {
-        
+
         const model = geminiClient.getGenerativeModel({ model: "gemini-1.5-flash" })
-        
+
         const result = await model.generateContent(prompt)
 
-        const response = await result.response; 
-        
+        const response = await result.response;
+
         return response.text();
-        
+
     } catch (error) {
         console.error("Failed to analyze code:", error);
         throw new Error("Error connecting to the AI. Please check your API key and try again.");
