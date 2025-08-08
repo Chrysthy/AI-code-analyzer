@@ -36,3 +36,14 @@
 
 <br>
 
+## ✨ Features
+
+- Automated Code Analysis – Uses Artificial Intelligence to identify issues, optimizations, and patterns in the source code.
+- Multi-Language Support – Compatible with languages like JavaScript, Python, Java, and more (customizable).
+- Bad Practice Detection – Finds code snippets that don’t follow best development practices.
+- Improvement Suggestions – Provides intelligent recommendations to improve code efficiency and readability.
+
+<br>
+
+
+## ⚙ How to Run
