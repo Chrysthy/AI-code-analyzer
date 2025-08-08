@@ -97,9 +97,9 @@ This project requires a valid **Google API key** to function properly.
 2. **Create a `.env` file in the project root**:
 
    ```bash
-   .env
+   .env.local
 
-3. **Add your API key to the .env file**:
+3. **Add your API key to the .env.local file**:
 
    ```bash
      VITE_GOOGLE_API_KEY=your-api-key-here
