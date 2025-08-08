@@ -22,3 +22,17 @@
 
 <br>
 
+## 🛠 Technologies
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)  
+- React 18
+- Vite (build tool moderno)
+- Gemini
+- CSS Modules
+- Hooks (useState, useEffect, useCallback)  
+- Git and GitHub
+
+<br>
+
