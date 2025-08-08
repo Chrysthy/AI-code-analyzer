@@ -48,13 +48,13 @@
 
 ## ⚙ How to Run
 
-### Requirements
+### 📋 Requirements
 
 - [Node.js](https://nodejs.org/) (version 18 or newer recommended)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (npm comes with Node.js)
 - [Git](https://git-scm.com/)
 
-### Steps
+### 👣 Steps
 
 1. **Clone the repository**:
 
