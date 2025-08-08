@@ -1,4 +1,4 @@
-<h1 align="center"> AI Code Analyzer </h1>
+<h1 align="center"> AI Code Analyzer ⏳</h1>
 
 <p align="center">
 <a href="#-screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
