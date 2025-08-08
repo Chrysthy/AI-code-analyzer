@@ -84,6 +84,28 @@
    ```
    http://localhost:5173
    ```
+   
+### 🔐 API Configuration
+
+This project requires a valid **Google API key** to function properly.
+
+1. **Get your API Key**:  
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project (or use an existing one)
+   - Generate an API key
+
+2. **Create a `.env` file in the project root**:
+
+   ```bash
+   .env
+
+3. **Add your API key to the .env file**:
+
+   ```bash
+     VITE_GOOGLE_API_KEY=your-api-key-here
+
+⚠️ Never share your .env file or commit your API key to GitHub.<br>
+Make sure .env is included in your .gitignore.
 
 <br>
 
